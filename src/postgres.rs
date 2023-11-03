@@ -5,11 +5,11 @@ use tokio_postgres_migration::Migration;
 const SCRIPTS_UP: [(&str, &str); 2] = [
     (
         "0001_create-users",
-        include_str!("../migrations/0001_create-users_up.sql"),
+        include_str!(r"../migrations/0001_create-users_up.sql"),
     ),
     (
         "0002_add-root-user-to-users",
-        include_str!("../migrations/0002_add-root-user-to-users_up.sql"),
+        include_str!(r"../migrations/0002_add-root-user-to-users_up.sql"),
     ),
 ];
 
